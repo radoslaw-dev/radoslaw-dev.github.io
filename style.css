@@ -120,3 +120,86 @@ li {
 .project-links a:hover {
     text-decoration: underline;
 }
+
+#contact {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #1a1a22;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 15px;
+    background-color: #1f2937;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.contact-links a:hover {
+    background-color: #374151;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #about p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+    }
+
+    .project-card span {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    
+    #contact {
+        text-align: center;
+    }
+
+}
