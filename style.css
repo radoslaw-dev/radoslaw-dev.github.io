@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #0f0f14;
     color: #f5f5f5;
@@ -22,6 +21,12 @@ header {
     margin-bottom: 60px;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
@@ -33,11 +38,53 @@ header p {
     color: #9ca3af;
 }
 
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials svg, .socials img {
+    display: block;
+}
+.socials img {
+    margin-left: 15px;
+    width: 22px;
+    filter: brightness(0.7);
+    transition: 0.2s;
+}
+
+.socials img:hover {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+
+.socials svg {
+    fill: #9ca3af;
+    transition: 0.2s;
+}
+
+.socials svg:hover {
+    fill: white;
+    transform: scale(1.1);
+}
+
 section {
     margin-bottom: 50px;
     padding: 30px;
     background-color: #15151c;
     border-radius: 12px;
+    transition: 0.2s;
+}
+
+section:hover {
+    transform: translateY(-2px);
 }
 
 section h2 {
@@ -47,11 +94,6 @@ section h2 {
 
 section p {
     margin-bottom: 16px;
-}
-
-section:hover {
-    transform: translateY(-2px);
-    transition: 0.2s;
 }
 
 ul {
@@ -82,6 +124,11 @@ li {
     transition: 0.2s;
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #20202a;
+}
+
 .project-card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
@@ -99,11 +146,6 @@ li {
     border-radius: 999px;
     background-color: #2a2a35;
     font-size: 0.85rem;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    background-color: #20202a;
 }
 
 .project-links {
@@ -124,12 +166,8 @@ li {
 #contact {
     margin-top: 60px;
     padding: 30px;
-    background-color: #1a1a22;
+    background-color: #15151c;
     border-radius: 10px;
-}
-
-#contact h2 {
-    margin-bottom: 15px;
 }
 
 .contact-links {
@@ -157,6 +195,15 @@ li {
         padding: 20px;
     }
 
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .socials {
+        margin-top: 10px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
@@ -169,20 +216,8 @@ li {
         padding: 20px;
     }
 
-    #about p {
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
-
-
-    .projects {
-        display: grid;
+    #projects {
         grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .project-card {
-        padding: 20px;
     }
 
     .project-card h3 {
@@ -197,9 +232,13 @@ li {
         font-size: 0.8rem;
         padding: 5px 10px;
     }
-    
+
     #contact {
         text-align: center;
     }
 
+    .contact-links a {
+        display: block;
+        margin: 10px 0;
+    }
 }
