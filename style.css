@@ -189,6 +189,25 @@ li {
     background-color: #374151;
 }
 
+footer {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    border-top: 1px solid #1f2937;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:hover {
+    color: #f5f5f5;
+    transition: 0.2s;
+}
+
 @media (max-width: 768px) {
 
     body {
