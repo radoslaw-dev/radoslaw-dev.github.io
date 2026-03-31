@@ -52,27 +52,26 @@ header p {
 
 .socials svg, .socials img {
     display: block;
+    width: 24px;
+    height: 24px;
 }
 .socials img {
-    margin-left: 15px;
     width: 22px;
     filter: brightness(0.7);
     transition: 0.2s;
 }
 
-.socials img:hover {
-    filter: brightness(1);
-    transform: scale(1.1);
-}
+
 
 .socials svg {
     fill: #9ca3af;
     transition: 0.2s;
 }
 
-.socials svg:hover {
+.socials svg:hover, .socials img:hover {
     fill: white;
-    transform: scale(1.1);
+    transform: scale(1.15);
+    filter: brightness(1);
 }
 
 section {
@@ -105,6 +104,18 @@ li {
     margin-bottom: 12px;
     color: #d1d5db;
 }
+
+#now {
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #15151c;
+    border-radius: 12px;
+}
+
+#now p {
+    color: #d1d5db;
+}
+
 
 #projects {
     display: grid;
@@ -161,6 +172,20 @@ li {
 
 .project-links a:hover {
     text-decoration: underline;
+}
+
+#now .project-card {
+    max-width: 400px;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: #2a2a35;
+    font-size: 0.75rem;
+    color: #9ca3af;
 }
 
 #contact {
