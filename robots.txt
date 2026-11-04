@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# DOPASUJ DOMENĘ PRZED PUBLIKACJĄ
+Sitemap: https://DOMENA-DO-UZUPELNIENIA.pl/sitemap.xml

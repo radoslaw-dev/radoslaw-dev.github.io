@@ -1,132 +1,815 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    <header>
-    <div class="header-content">
-        <div class="header-text">
-            <h1>Radosław Cis</h1>
-            <p class="subtitle">IT student building projects in Python, networking and web development.</p>
-            <p class="tech-line">Python • Networking • CLI • Web</p>
-        </div>
-
-        <div class="socials">
-            <a href="https://github.com/radoslaw-dev" target="_blank">
-                <svg height="22" viewBox="0 0 16 16" fill="white">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-                    -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-                    .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-                    -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09
-                    2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82
-                    2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01
-                    2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/rados%C5%82aw-cis-60b03339b/" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
-            </a>
-            <a href="https://dev.to/radoslawdev" target="_blank" class="social-icon">
-                <img src="https://cdn.simpleicons.org/devdotto/white" alt="Dev.to">
-            </a>
-        </div>
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b14" />
+    <!-- WAZNE: przed publikacja zamien DOMENA-DO-UZUPELNIENIA.pl na prawdziwy adres witryny (takze w sitemap.xml i robots.txt). -->
+    <link rel="canonical" href="https://DOMENA-DO-UZUPELNIENIA.pl/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:url" content="https://DOMENA-DO-UZUPELNIENIA.pl/" />
+    <meta property="og:image" content="https://DOMENA-DO-UZUPELNIENIA.pl/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Radosław Cis — tworzenie, modernizacja i podstawy SEO stron firmowych" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Radosław Cis — nowoczesne strony WWW i SEO dla firm" />
+    <meta name="twitter:description" content="Strony WWW, redesign i podstawy SEO. Wałcz i współpraca zdalna." />
+    <meta name="twitter:image" content="https://DOMENA-DO-UZUPELNIENIA.pl/assets/og-image.png" />
+    <script type="application/ld+json">{
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Radosław Cis",
+      "description":"Uczeń technikum informatycznego, rozwijający się w projektowaniu i tworzeniu responsywnych stron internetowych oraz podstawach SEO technicznego.",
+      "email":"mailto:cis.radoslaw@protonmail.com",
+      "knowsAbout":["HTML", "CSS", "JavaScript", "responsywne strony WWW", "podstawy SEO technicznego"],
+      "sameAs":["https://github.com/radoslaw-dev", "https://radoslaw-dev.github.io/"]
+    }</script>
+    <meta
+      name="description"
+      content="Radosław Cis — strony internetowe dla firm z Wałcza i całej Polski. Tworzenie stron WWW, redesign, optymalizacja mobilna i podstawy SEO technicznego."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Radosław Cis — strony WWW i redesign dla firm"
+    />
+    <meta
+      property="og:description"
+      content="Nowoczesna strona internetowa dla Twojej firmy? Porozmawiajmy o nowej stronie albo odświeżeniu obecnej."
+    />
+    <meta property="og:locale" content="pl_PL" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Strony internetowe i SEO dla firm | Wałcz — Radosław Cis</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span
+          ><span class="pulse-dot" aria-hidden="true"></span> Masz pomysł na
+          nową stronę?</span
+        ><a
+          href="mailto:cis.radoslaw@protonmail.com?subject=Zapytanie%20o%20stron%C4%99%20WWW"
+          >Porozmawiajmy o projekcie <span aria-hidden="true">↗</span></a
+        >
+      </div>
     </div>
-</header>
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>Hi. My name is Radoslaw I am from Poland. I am a third year student in IT technical school. This year I am completing my first qualification in</p>
-            <p><em>Administration and operation of computer systems, peripheral devices, and local computer networks.</em></p>
-            <p>Right now I am focusing on</p>
-            <ul>
-                <li>improving my frontend skills</li>
-                <li>computer networks</li>
-                <li>programming (mostly Python)</li>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Radosław Cis — początek strony"
+          ><span class="brand-symbol"
+            ><img
+              src="assets/favicon.svg"
+              alt=""
+              width="39"
+              height="39" /><span></span></span
+          ><span class="brand-name"
+            >radosław<span class="brand-muted">/dev</span></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Otwórz menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="primary-navigation" aria-label="Menu główne">
+          <a href="#oferta">Oferta</a><a href="#proces">Współpraca</a
+          ><a href="#projekty">Projekty</a><a href="#faq">FAQ</a><a href="#o-mnie">O mnie</a>
+          <a class="nav-contact" href="#kontakt"
+            >Kontakt <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span> STRONY WWW
+            <span class="eyebrow-spark">✳</span> REDESIGN I PODSTAWY SEO
+          </div>
+          <h1 id="hero-heading">
+            Twoja firma.<br /><span class="gradient-text">Lepsza strona.</span>
+          </h1>
+          <p class="hero-lead">
+            Tworzę nowoczesne strony internetowe i odświeżam te, które nie
+            pokazują już pełnego potencjału Twojej firmy.
+          </p>
+          <p class="hero-secondary">
+            Czytelna oferta, szybkie ładowanie i techniczne podstawy widoczności
+            w Google. Wałcz, okolice i współpraca online.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt"
+              >Porozmawiajmy o stronie <span aria-hidden="true">↗</span></a
+            ><a class="btn btn-ghost" href="#projekty"
+              >Zobacz moje projekty <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-credentials">
+            <span class="credential-icon" aria-hidden="true">✦</span
+            ><span
+              >Jestem uczniem
+              <strong>technikum informatycznego</strong>.<br />Rozwijam się i
+              specjalizuję w tworzeniu stron WWW.</span
+            >
+          </div>
+        </div>
+        <div
+          class="hero-art"
+          aria-label="Wizualizacja przykładowej nowoczesnej strony internetowej"
+        >
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="browser-shadow"></div>
+          <div class="browser-window">
+            <div class="browser-bar">
+              <div class="browser-dots"><i></i><i></i><i></i></div>
+              <div class="browser-url">
+                <span class="lock-icon">◇</span> twoja-firma.pl
+              </div>
+              <div class="browser-options">⋯</div>
+            </div>
+            <div class="mock-site">
+              <div class="mock-header">
+                <div class="mock-logo">forma<span>.</span></div>
+                <div class="mock-links">
+                  O nas&nbsp;&nbsp;&nbsp; Oferta&nbsp;&nbsp;&nbsp; Realizacje
+                </div>
+                <div class="mock-nav-cta">Kontakt ↗</div>
+              </div>
+              <div class="mock-content">
+                <div class="mock-copy">
+                  <div class="mock-kicker">STUDIO KREATYWNE</div>
+                  <div class="mock-title">
+                    Pomysły<br />nabierają<br /><em>kształtu.</em>
+                  </div>
+                  <div class="mock-description">
+                    Tworzymy przestrzeń dla<br />Twojej wizji.
+                  </div>
+                  <div class="mock-button">Poznaj nas <span>↗</span></div>
+                </div>
+                <div class="mock-visual">
+                  <div class="sculpture-circle"></div>
+                  <div class="sculpture-pillar"></div>
+                  <div class="sculpture-loop"></div>
+                  <div class="visual-note">
+                    DOBRY DESIGN.<br />LEPSZY KONTAKT.
+                  </div>
+                </div>
+              </div>
+              <div class="mock-bottom">
+                <span>01 / 03</span><span>EST. 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="float-label float-label-top">
+            <span class="float-icon float-icon-purple">✳</span
+            ><span
+              ><strong>Nowoczesny wygląd</strong
+              ><small>Projekt dopasowany do marki</small></span
+            >
+          </div>
+          <div class="float-label float-label-bottom">
+            <span class="float-icon float-icon-blue">↗</span
+            ><span
+              ><strong>Na telefonie też działa</strong
+              ><small>Wygodnie na każdym ekranie</small></span
+            >
+          </div>
+          <div class="art-caption">
+            PRZYKŁADOWA WIZUALIZACJA • PROJEKT KONCEPCYJNY
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="ticker" aria-label="Zakres usług">
+          <span>NOWE STRONY WWW</span><span class="ticker-star">✳</span
+          ><span>ODŚWIEŻANIE STRON</span><span class="ticker-star">✳</span
+          ><span>RESPONSYWNY DESIGN</span><span class="ticker-star">✳</span
+          ><span>CZYTELNY UKŁAD</span><span class="ticker-star">✳</span
+          ><span>PODSTAWY SEO</span>
+        </div>
+      </div>
+
+      <section
+        class="section container"
+        id="oferta"
+        aria-labelledby="offer-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker"
+              ><span class="section-number">01 /</span> CO MOGĘ DLA CIEBIE
+              ZROBIĆ</span
+            >
+            <h2 id="offer-title">
+              Dobra strona to <span class="text-soft">dobry początek.</span>
+            </h2>
+          </div>
+          <p>
+            Nie musisz znać się na kodzie ani projektowaniu. Wystarczy, że
+            powiesz mi, czego potrzebuje Twoja firma.
+          </p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-index">01</span>
+              <div class="service-icon">
+                <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                  <rect
+                    x="4"
+                    y="6"
+                    width="24"
+                    height="20"
+                    rx="3"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M4 12h24M10 9h.1M14 9h.1M11 18l3 3 7-7"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3>Nowa strona WWW</h3>
+            <p>
+              Od pierwszego pomysłu do gotowej witryny. Przejrzysta strona,
+              która przedstawia Twoją ofertę i ułatwia klientom kontakt.
+            </p>
+            <ul class="mini-list">
+              <li>Strony wizytówki i landing page</li>
+              <li>Układ dopasowany do firmy</li>
+              <li>Wersja na telefon i komputer</li>
             </ul>
-            <p>I'm currently focused on building small projects to improve my skills and better understand how real applications work.</p>
-        </section>
-        <section id="now">
-            <h2>Currently working on</h2>
+            <a href="#kontakt" class="card-link"
+              >Zapytaj o realizację <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service-card featured reveal">
+            <div class="service-top">
+              <span class="service-index"
+                >02 <span class="tag-small">REDESIGN</span></span
+              >
+              <div class="service-icon">
+                <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                  <path
+                    d="M25 11V5h-6M7 21v6h6M25 5l-8 8M7 27l8-8"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="5"
+                    y="5"
+                    width="22"
+                    height="22"
+                    rx="4"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    opacity=".45"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3>Odświeżenie strony</h3>
+            <p>
+              Twoja strona wygląda na starszą, niż jest Twoja firma? Pomogę
+              nadać jej świeży wygląd i lepiej uporządkować treści.
+            </p>
+            <ul class="mini-list">
+              <li>Nowa szata graficzna</li>
+              <li>Lepsza czytelność i nawigacja</li>
+              <li>Usprawnienie wersji mobilnej</li>
+            </ul>
+            <a href="#kontakt" class="card-link"
+              >Porozmawiajmy o zmianach <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-index">03</span>
+              <div class="service-icon">
+                <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                  <rect
+                    x="3"
+                    y="6"
+                    width="19"
+                    height="15"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <rect
+                    x="23"
+                    y="11"
+                    width="6"
+                    height="15"
+                    rx="1.5"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M9 25h7M12.5 21v4M25 23h2"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3>Ulepszenia i poprawki</h3>
+            <p>
+              Czasami nie trzeba budować wszystkiego od nowa. Mogę pomóc w
+              mniejszych zmianach, które poprawią odbiór strony.
+            </p>
+            <ul class="mini-list">
+              <li>Poprawki wizualne i układu</li>
+              <li>Przyciski i sekcje kontaktowe</li>
+              <li>Dopasowanie do różnych ekranów</li>
+            </ul>
+            <a href="#kontakt" class="card-link"
+              >Opisz, czego potrzebujesz <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service-card seo-card reveal">
+            <div class="service-top">
+              <span class="service-index">04 <span class="tag-small">SEO</span></span>
+              <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="14" cy="14" r="8"/><path d="m20 20 7 7M10 15l3-3 3 3 3-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <h3>Podstawy SEO i widoczności lokalnej</h3>
+            <p>Projektuję stronę tak, by wyszukiwarki mogły zrozumieć jej treść, a klienci łatwo znaleźli najważniejsze informacje.</p>
+            <ul class="mini-list">
+              <li>Tytuły stron, opisy i logiczne nagłówki</li>
+              <li>Dane strukturalne i lokalne informacje</li>
+              <li>Szybkość, dostępność i wersja mobilna</li>
+            </ul>
+            <a href="#seo" class="card-link">Zobacz, co sprawdzam <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
 
-            <div class="project-card">
-                <h3>NetRadar V2</h3>
-                <p>Improved version of NetRadar with performance optimizations and new features.</p>
+      <section class="section container seo-section" id="seo" aria-labelledby="seo-title">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker"><span class="section-number">02 /</span> STRONA, KTÓRĄ MOŻNA ZNALEŹĆ</span>
+            <h2 id="seo-title">Wygląd to nie wszystko.<br><span class="text-soft">Liczą się też podstawy SEO.</span></h2>
+          </div>
+          <p>Bez obietnic pierwszego miejsca w Google. W ramach uzgodnionego projektu dbam o fundamenty techniczne, które można sprawdzić.</p>
+        </div>
+        <div class="seo-showcase reveal">
+          <div class="seo-code" aria-label="Przykłady elementów SEO w kodzie strony">
+            <div class="seo-code-bar"><span class="seo-dots">● ● ●</span><span>index.html / SEO CHECK</span></div>
+            <div class="seo-code-lines">
+              <div><span>01</span><code>&lt;title&gt;Usługi firmy | Wałcz&lt;/title&gt;</code></div>
+              <div><span>02</span><code>&lt;meta name="description" …&gt;</code></div>
+              <div><span>03</span><code>&lt;h1&gt;Jasna oferta usług&lt;/h1&gt;</code></div>
+              <div><span>04</span><code>schema.org / LocalBusiness</code></div>
+              <div><span>05</span><code>mobile-first / szybkość</code></div>
+            </div>
+            <p>To przykładowe elementy pracy, nie wynik audytu ani gwarancja pozycji.</p>
+          </div>
+          <div class="seo-benefits">
+            <div><span>01 /</span><strong>Treść i struktura</strong><p>Logiczne nagłówki, opisy podstron, odpowiednie linkowanie i przydatna treść.</p></div>
+            <div><span>02 /</span><strong>Firma w okolicy</strong><p>Widoczne dane kontaktowe, godziny, wskazówki do Map Google i pomoc z profilem firmy w uzgodnionym zakresie.</p></div>
+            <div><span>03 /</span><strong>Wygoda i wydajność</strong><p>Responsywność, lekkie zasoby i testy w Lighthouse lub PageSpeed Insights po publikacji.</p></div>
+          </div>
+        </div>
+      </section>
 
-                <span>Python - Networking - JSON - CLI</span>
-                <span class="badge">In progress</span>
+      <section
+        class="section container"
+        id="proces"
+        aria-labelledby="process-title"
+      >
+        <div class="process-panel">
+          <div class="section-heading reveal">
+            <div>
+              <span class="section-kicker"
+                ><span class="section-number">03 /</span> JAK WYGLĄDA
+                WSPÓŁPRACA</span
+              >
+              <h2 id="process-title">
+                Prosty proces.<br /><span class="text-soft"
+                  >Bez niepotrzebnego chaosu.</span
+                >
+              </h2>
+            </div>
+            <p>
+              Każdy projekt zaczynam od zrozumienia firmy i celu strony. Zakres,
+              termin oraz szczegóły ustalamy przed rozpoczęciem prac.
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step reveal">
+              <span class="step-n">01</span>
+              <div class="step-connector"></div>
+              <h3>Rozmowa</h3>
+              <p>
+                Opowiadasz o firmie, obecnej stronie i tym, co chcesz poprawić.
+              </p>
+            </div>
+            <div class="step reveal">
+              <span class="step-n">02</span>
+              <div class="step-connector"></div>
+              <h3>Kierunek</h3>
+              <p>Ustalamy zakres, wygląd i najważniejsze elementy witryny.</p>
+            </div>
+            <div class="step reveal">
+              <span class="step-n">03</span>
+              <div class="step-connector"></div>
+              <h3>Tworzenie</h3>
+              <p>
+                Przygotowuję stronę i wprowadzam wspólnie ustalone poprawki.
+              </p>
+            </div>
+            <div class="step reveal">
+              <span class="step-n">04</span>
+              <h3>Gotowa strona</h3>
+              <p>
+                Sprawdzamy efekt i ustalamy sposób publikacji strony w sieci.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div class="project-links">
-                    <a href="https://github.com/radoslaw-dev/Net-Radar">View version 1</a>
+      <section
+        class="section container"
+        id="projekty"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker"
+              ><span class="section-number">04 /</span> MOJE PROJEKTY</span
+            >
+            <h2 id="projects-title">
+              Zobacz, <span class="text-soft">jak pracuję.</span>
+            </h2>
+          </div>
+          <p>
+            Pokazuję własne projekty i przykłady umiejętności. Projekty
+            demonstracyjne są wyraźnie oznaczone — nie przedstawiam ich jako
+            realizacji dla klientów.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <article class="project project-large redesign-project reveal">
+            <div class="project-visual redesign-preview">
+              <div class="mini-before"><span class="redesign-stamp">PRZED</span><div class="old-logo">STUDIO URODY AMI</div><div class="old-nav">STRONA GŁÓWNA | CENNIK | KONTAKT</div><h4>WITAMY NA<br>NASZEJ STRONIE!</h4><p>Profesjonalnie • miło • tanio</p></div>
+              <div class="mini-after"><span class="redesign-stamp">PO</span><div class="new-logo">ami<span>.</span></div><span class="mini-eyebrow">STUDIO URODY</span><h4>Piękno w<br><em>Twoim rytmie.</em></h4><span class="mini-pill">Poznaj ofertę ↗</span><div class="mini-arc"></div></div>
+            </div>
+            <div class="project-info">
+              <div class="project-label"><span class="chip">KONCEPCJA REDESIGNU</span><span>PRZED / PO</span></div>
+              <h3>Studio Ami — jak zmienia się strona po redesignie?</h3>
+              <p>Dwie wersje tej samej fikcyjnej strony: stary, chaotyczny układ i nowoczesna, czytelna odsłona. Interaktywne porównanie pokazuje, co zmieniłbym dla firmy.</p>
+              <a class="project-link" href="demo-redesign.html" target="_blank" rel="noopener">Porównaj przed i po <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project project-large reveal">
+            <div class="project-visual demo-preview">
+              <div class="demo-mini-browser">
+                <span></span><span></span><span></span
+                ><small>demo — strona pokazowa</small>
+              </div>
+              <div class="demo-art">
+                <div class="demo-brand">morrow<span>.</span></div>
+                <div class="demo-art-copy">
+                  <span>GOOD COFFEE. SLOW MORNINGS.</span
+                  ><strong>Twój moment<br />na kawę.</strong>
                 </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            
-            <div class="project-card featured">
-                <span class="featured-badge">Featured project</span>
-                <h3>NetRadar</h3>
-                <p>CLI tool for scanning local networks, detecting active hosts and identifying open ports with service mapping.</p>
-                <span>Python - Networking - JSON - CLI</span>
-                <span class="badge">v1</span>
-                <div class="project-links">
-                    <a href="https://github.com/radoslaw-dev/Net-Radar" target="_blank">View code</a>
+                <div class="coffee-plate"></div>
+                <div class="coffee-shadow"></div>
+                <div class="coffee-handle"></div>
+                <div class="coffee-cup">
+                  <div class="coffee-surface">
+                    <div class="latte-heart">♥</div>
+                  </div>
                 </div>
+                <div class="coffee-bean bean-one"></div>
+                <div class="coffee-bean bean-two"></div>
+                <div class="coffee-bean bean-three"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-label">
+                <span class="chip">PROJEKT DEMONSTRACYJNY</span
+                ><span>HTML / CSS</span>
+              </div>
+              <h3>Morrow — przykładowa strona kawiarni</h3>
+              <p>
+                Autorska koncepcja witryny małego lokalu. Pokazuje, jak może
+                wyglądać współczesna strona dla firmy — to demo, nie zlecenie
+                klienta.
+              </p>
+              <a
+                class="project-link"
+                href="demo-kawiarnia.html"
+                target="_blank"
+                rel="noopener"
+                >Otwórz działające demo <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual mechanic-preview">
+              <div class="mechanic-head">
+                <strong>47<span>°</span></strong>
+                <small>STACJA 47 / AUTO SERVICE</small>
+              </div>
+
+              <div class="mechanic-title">
+                Twoje auto.<br />
+                <em>W dobrych<br />rękach.</em>
+              </div>
+
+              <div class="mechanic-wheel" aria-hidden="true"></div>
+
+              <div class="mechanic-foot">
+                DIAGNOSTYKA <b>✳</b> MECHANIKA <b>✳</b> OPONY
+              </div>
             </div>
 
+            <div class="project-info">
+              <div class="project-label">
+                <span class="chip">PROJEKT DEMONSTRACYJNY</span>
+                <span>HTML / CSS / JS</span>
+              </div>
 
-            <div class="project-card">
-                <h3>CLI Task Manager v2</h3>
-                <p>Refactored CLI task manager in Python featuring JSON data persistence, full CRUD functionality and structured task management.</p>
-                <span>Python - CLI - Data Structures</span>
-                <span class="badge">v1</span>
-                <div class="project-links">
-                    <a href="https://github.com/radoslaw-dev/cli-task-manager" target="_blank">View code</a>
-                </div>
-            </div>
+              <h3>Stacja 47 — strona warsztatu samochodowego</h3>
 
+              <p>
+                Nowoczesna strona przykładowego warsztatu: oferta usług,
+                responsywny układ i demonstracyjny formularz. To projekt
+                koncepcyjny, a nie realizacja dla klienta.
+              </p>
 
-            <div class="project-card">
-                <h3>Simple network scanner</h3>
-                <p>Basic network scanner that detects active hosts in a local network using ICMP (ping).</p>
-                <span>Pyhton - Networking - CLI</span>
-                <div class="project-links">
-                    <a href="https://github.com/radoslaw-dev/simple-network-scanner">View code</a>
+              <a
+                class="project-link"
+                href="demo-mechanik.html"
+                target="_blank"
+                rel="noopener"
+              >
+                Otwórz działające demo
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual tech-preview">
+              <div class="tech-preview-header">
+                <span class="tech-avatar">RC<span>.</span></span
+                ><span>developer portfolio</span
+                ><span class="tech-circle">↗</span>
+              </div>
+              <div class="tech-preview-content">
+                <small>HELLO, I'M</small><strong>Radosław<br />Cis.</strong>
+                <p>Python &nbsp;•&nbsp; Networking &nbsp;•&nbsp; Web</p>
+                <div class="tech-lines"><i></i><i></i><i></i></div>
+              </div>
+              <div class="tech-grid" aria-hidden="true"></div>
+            </div>
+            <div class="project-info">
+              <div class="project-label">
+                <span class="chip chip-purple">WŁASNY PROJEKT</span
+                ><span>HTML / CSS</span>
+              </div>
+              <h3>Portfolio developerskie</h3>
+              <p>
+                Moja obecna strona prezentująca naukę programowania, projekty
+                techniczne i rozwój umiejętności.
+              </p>
+              <a
+                class="project-link"
+                href="https://radoslaw-dev.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Zobacz stronę <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-visual code-preview">
+              <div class="code-header">
+                <span><i></i><i></i><i></i></span><span>net-radar.py</span
+                ><span class="code-symbol">⌘</span>
+              </div>
+              <div class="code-content">
+                <div>
+                  <b>01</b> <span class="code-purple">def</span>
+                  <span class="code-blue">scan_network</span>(subnet):
                 </div>
-            </div>
-            <div class="project-card">
-                <h3>This portfolio website</h3>
-                <p>Personal portfolio website presenting my projects and development in Python, networking and web technologies.</p>
-                <span>HTML - CSS</span>
-                <div class="project-links">
-                    <a href="https://github.com/radoslaw-dev/radoslaw-dev.github.io" target="_blank">View code</a>
-                    <a href="https://radoslaw-dev.github.io/" target="_blank">Live</a>
+                <div>
+                  <b>02</b> &nbsp;
+                  <span class="code-grey"># discover active devices</span>
                 </div>
+                <div>
+                  <b>03</b> &nbsp; hosts =
+                  <span class="code-blue">find_hosts</span>(subnet)
+                </div>
+                <div>
+                  <b>04</b> &nbsp; <span class="code-purple">for</span> host
+                  <span class="code-purple">in</span> hosts:
+                </div>
+                <div>
+                  <b>05</b> &nbsp; &nbsp;
+                  <span class="code-blue">scan_ports</span>(host)
+                </div>
+                <div>
+                  <b>06</b> &nbsp; <span class="code-purple">return</span> hosts
+                </div>
+                <div class="terminal-line">$ scan completed <span>✓</span></div>
+              </div>
             </div>
-            <div class="project-card">
-                <h3>Next project / Coming soon</h3>
-                <p>Currently working on a new project focused on performance improvements and advanced networking features.</p>
-                <span>Coming soon</span>
+            <div class="project-info">
+              <div class="project-label">
+                <span class="chip chip-purple">PROJEKT PROGRAMISTYCZNY</span
+                ><span>PYTHON</span>
+              </div>
+              <h3>NetRadar — narzędzie sieciowe</h3>
+              <p>
+                Samodzielny projekt Python do wykrywania urządzeń i skanowania
+                portów. Pokazuje moje techniczne zaplecze.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/radoslaw-dev/Net-Radar"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Zobacz kod na GitHub <span aria-hidden="true">↗</span></a
+              >
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Got an idea, collaboration, or just want to say hi?</p>
-            <div class="contact-links">
-                <a href="mailto:cis.radoslaw@gmail.com">E-mail</a>
-                <a href="https://github.com/radoslaw-dev" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/rados%C5%82aw-cis-60b03339b/recent-activity/all/" target="_blank">LinkedIn</a>
-                <a href="https://dev.to/radoslawdev" target="_blank">Dev.to</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker"><span class="section-number">05 /</span> PYTANIA PRZED WSPÓŁPRACĄ</span>
+            <h2 id="faq-title">Krótko i <span class="text-soft">na temat.</span></h2>
+          </div>
+          <p>Najczęstsze pytania przy tworzeniu i odświeżaniu stron firmowych.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details><summary>Czy mogę zlecić tylko poprawę obecnej strony?<span aria-hidden="true">+</span></summary><p>Tak. Możemy zacząć od konkretnych zmian: wyglądu, nawigacji, wersji mobilnej lub uzupełnienia informacji. Po sprawdzeniu witryny zaproponuję zakres prac.</p></details>
+          <details><summary>Co z domeną i hostingiem?<span aria-hidden="true">+</span></summary><p>Przed startem ustalimy, czy masz już domenę i hosting. Mogę pomóc wybrać rozwiązanie i przygotować pliki do publikacji. Opłaty za domenę i hosting są rozliczane osobno u wybranego dostawcy.</p></details>
+          <details><summary>Czy będę mógł sam edytować treści?<span aria-hidden="true">+</span></summary><p>To zależy od technologii. Prosta strona HTML wymaga edycji plików; jeżeli potrzebujesz wygodnego panelu, ustalimy to przed wyborem sposobu realizacji.</p></details>
+          <details><summary>Ile to kosztuje i jak długo trwa?<span aria-hidden="true">+</span></summary><p>Wycena i termin zależą od liczby podstron, materiałów i zakresu zmian. Po krótkiej rozmowie przygotuję propozycję bez podawania z góry niepewnych obietnic.</p></details>
+          <details><summary>Czy SEO gwarantuje wysoką pozycję w Google?<span aria-hidden="true">+</span></summary><p>Nie. Podstawy SEO pomagają wyszukiwarce zrozumieć stronę, ale pozycje zależą też od konkurencji, treści i wielu innych czynników. Nie obiecuję konkretnych miejsc w wynikach.</p></details>
+        </div>
+      </section>
+
+      <section
+        class="section container about-section"
+        id="o-mnie"
+        aria-labelledby="about-title"
+      >
+        <div class="about-card reveal">
+          <div class="about-portrait" aria-hidden="true">
+            <span class="about-big-letter">R<span>.</span></span
+            ><span class="portrait-chip">IT / WEB</span>
+            <div class="portrait-grid"></div>
+          </div>
+          <div class="about-copy">
+            <span class="section-kicker"
+              ><span class="section-number">06 /</span> KILKA SŁÓW O MNIE</span
+            >
+            <h2 id="about-title">
+              Cześć, jestem <span class="gradient-text">Radosław.</span>
+            </h2>
+            <p>
+              Uczę się w <strong>technikum o profilu informatycznym</strong>. Na
+              co dzień rozwijam umiejętności programistyczne, a w obszarze stron
+              internetowych skupiam się na frontendzie — wyglądzie, układzie i
+              wygodzie użytkownika.
+            </p>
+            <p>
+              Pracuję bezpośrednio z osobą zamawiającą, uważnie zbieram uwagi i stawiam na prosty kontakt. Chcę wykorzystywać to, czego się uczę, w prawdziwych projektach.
+              Szczególnie interesuje mnie tworzenie i odświeżanie stron dla
+              małych firm, które potrzebują estetycznej, przystępnej obecności w
+              internecie.
+            </p>
+            <div class="skill-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span
+              ><span>Responsywne strony</span><span>Podstawy SEO</span><span>Python</span>
             </div>
-        </section>
+            <a
+              class="text-link"
+              href="https://github.com/radoslaw-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Zobacz mój GitHub <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section container contact-section"
+        id="kontakt"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-panel reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <span class="section-kicker"
+            ><span class="section-number">07 /</span> KONTAKT</span
+          >
+          <h2 id="contact-title">
+            Masz stronę do odświeżenia?<br /><span class="gradient-text"
+              >A może zaczynamy od zera?</span
+            >
+          </h2>
+          <p>
+            Napisz kilka zdań o swojej firmie i pomyśle. Możesz skorzystać z formularza poniżej — przygotuje on gotową wiadomość w Twojej poczcie.
+          </p>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary btn-big"
+              href="mailto:cis.radoslaw@protonmail.com?subject=Zapytanie%20o%20stron%C4%99%20WWW&body=Cze%C5%9B%C4%87%20Rados%C5%82aw%2C%0A%0APisz%C4%99%20w%20sprawie%20strony%20internetowej.%0A%0ANazwa%20firmy%3A%0AObecna%20strona%20(je%C5%9Bli%20jest)%3A%0ACo%20chcieliby%C5%9Bmy%20zrobi%C4%87%3A%0A%0APozdrawiam%2C"
+              >Napisz do mnie <span aria-hidden="true">↗</span></a
+            ><button
+              class="btn btn-copy"
+              type="button"
+              id="copy-email"
+              data-email="cis.radoslaw@protonmail.com"
+              aria-live="polite"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+                <rect
+                  x="8"
+                  y="8"
+                  width="12"
+                  height="12"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                /></svg
+              ><span>Kopiuj e-mail</span>
+            </button>
+          </div>
+          <form id="inquiry-form" class="inquiry-form" aria-label="Przygotuj zapytanie o stronę">
+            <div class="inquiry-grid">
+              <label>Jak się do Ciebie zwracać?<input name="name" type="text" placeholder="Twoje imię" required maxlength="80" autocomplete="name" /></label>
+              <label>Rodzaj projektu<select name="service" required><option value="">Wybierz zakres</option><option>Nowa strona internetowa</option><option>Redesign obecnej strony</option><option>Podstawy SEO</option><option>Poprawki i usprawnienia</option></select></label>
+              <label class="wide">Co chcesz zrobić?<textarea name="message" rows="3" placeholder="Napisz krótko o swojej firmie lub podaj link do obecnej strony…" required maxlength="1200"></textarea></label>
+            </div>
+            <div class="inquiry-bottom"><p>Nie zapisuję danych z formularza. Przycisk otworzy program pocztowy — wiadomość wyślesz samodzielnie.</p><button class="btn btn-primary" type="submit">Przygotuj e-mail <span aria-hidden="true">↗</span></button></div>
+          </form>
+          <a class="email-visible" href="mailto:cis.radoslaw@protonmail.com"
+            >cis.radoslaw@protonmail.com</a
+          >
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Radoslaw Cis · Built with HTML & CSS</p>
+    <footer class="footer container">
+      <a class="brand" href="#top"
+        ><span class="brand-symbol"><img src="assets/favicon.svg" width="39" height="39" alt="" /></span>
+        ><span class="brand-name"
+          >radosław<span class="brand-muted">/dev</span></span
+        ></a
+      ><span
+        >© <span id="year">2026</span> Radosław Cis. Zaprojektowane z myślą o
+        dobrych pierwszych wrażeniach.</span
+      >
+      <div class="footer-links">
+        <a
+          href="https://github.com/radoslaw-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub ↗</a
+        ><a
+          href="https://radoslaw-dev.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Portfolio IT ↗</a
+        ><a href="#top">Do góry ↑</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

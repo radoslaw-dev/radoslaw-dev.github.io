@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121418">
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Przykładowe dane uporządkowane fikcyjnej marki. Demo jest oznaczone noindex. -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org", "@type":"AutoRepair",
+    "name":"STACJA 47 — warsztat demonstracyjny",
+    "description":"Przykładowy warsztat samochodowy — fikcyjna marka w projekcie portfolio.",
+    "address":{"@type":"PostalAddress", "addressLocality":"Wałcz", "addressCountry":"PL"},
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"13:00"}
+    ]
+  }</script>
+  <meta name="description" content="STACJA 47 – koncepcyjna strona internetowa warsztatu samochodowego. Projekt demonstracyjny Radosława Cisa.">
+  <link rel="stylesheet" href="demo-mechanik.css">
+  <title>STACJA 47 — Warsztat samochodowy | Projekt demonstracyjny</title>
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <div class="demo-notice"><span>PROJEKT DEMONSTRACYJNY · FIKCYJNA MARKA</span><a href="index.html#projekty">← Wróć do portfolio Radosława</a></div>
+  <main id="main">
+  <div class="dark-wrap">
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#start" aria-label="Stacja 47, strona główna">
+          <span class="brand-mark">47<span>°</span></span>
+          <span class="brand-name">STACJA<br>47 <small>AUTO SERVICE</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-navigation">☰</button>
+        <nav class="nav" id="site-navigation" aria-label="Menu główne">
+          <a href="#uslugi">Usługi</a>
+          <a href="#o-nas">O warsztacie</a>
+          <a href="#jak-dzialamy">Jak działamy</a><a href="#lokalizacja">Lokalizacja</a>
+          <a class="nav-button" href="#kontakt">Umów wizytę <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+      <section class="hero container" id="start">
+        <div class="hero-copy">
+          <span class="eyebrow">SERWIS SAMOCHODOWY / STACJA 47</span>
+          <h1>Twoje auto.<br><em>W dobrych<br>rękach.</em></h1>
+          <p class="hero-description">Diagnostyka, serwis i naprawy samochodów osobowych. Konkretny plan działania, zrozumiałe informacje i podejście bez zbędnych komplikacji.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#kontakt">Umów wizytę <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#uslugi">Poznaj nasze usługi <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-trust"><span>DIAGNOSTYKA</span><i aria-hidden="true"></i><span>MECHANIKA</span><i aria-hidden="true"></i><span>SERWIS OPON</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustracja nowoczesnego samochodu">
+          <div class="visual-orbit" aria-hidden="true"></div>
+          <div class="visual-tag"><b></b> FULL SERVICE / AUTO CARE</div>
+          <svg class="car-art" viewBox="0 0 960 610" role="img" aria-label="Stylizowana ilustracja samochodu">
+            <defs>
+              <linearGradient id="body" x1="0" y1="0" x2=".25" y2="1">
+                <stop offset="0%" stop-color="#9b9fa7"/>
+                <stop offset="38%" stop-color="#50545e"/>
+                <stop offset="75%" stop-color="#292c34"/>
+                <stop offset="100%" stop-color="#161a21"/>
+              </linearGradient>
+              <linearGradient id="windows" x1="0" y1="0" x2=".85" y2="1"><stop offset="0" stop-color="#2a323d"/><stop offset=".52" stop-color="#171b25"/><stop offset="1" stop-color="#0a0d13"/></linearGradient>
+              <linearGradient id="orangeBand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ba3e23"/><stop offset=".5" stop-color="#ff704a"/><stop offset="1" stop-color="#f89b68"/></linearGradient>
+              <radialGradient id="shadow"><stop offset="0" stop-color="#000" stop-opacity=".9"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+            </defs>
+            <ellipse cx="484" cy="482" rx="420" ry="60" fill="url(#shadow)" opacity=".65"/>
+            <ellipse cx="490" cy="425" rx="420" ry="135" fill="#d86143" opacity=".035"/>
+            <path d="M83 391 L105 340 Q118 322 170 309 L258 285 L327 216 Q350 189 392 183 L639 178 Q688 178 729 217 L799 285 L878 311 Q904 322 916 347 L927 387 Q929 406 915 416 L880 426 L858 424 L143 424 L113 423 Q83 417 83 391Z" fill="url(#body)" stroke="#9a9da5" stroke-width="3"/>
+            <path d="M278 282 L347 216 Q362 203 392 200 L624 197 Q663 197 692 224 L759 283Z" fill="url(#windows)" stroke="#6c7683" stroke-width="2.5"/>
+            <path d="M477 200 L477 283 M696 224 L759 283" stroke="#8993a1" stroke-width="7" opacity=".6"/>
+            <path d="M106 356 Q490 366 907 357" fill="none" stroke="#15171c" stroke-width="7" opacity=".55"/>
+            <path d="M85 391 L926 389 L913 414 L883 424 L139 424 L105 416Z" fill="#13151a"/>
+            <path d="M134 387 L869 388" stroke="#ff754f" stroke-width="5" opacity=".82"/>
+            <path d="M321 311 L724 310" stroke="#c7cbd2" opacity=".58" stroke-width="2"/>
+            <path d="M498 307 L497 376" stroke="#1b202a" stroke-width="3" opacity=".8"/>
+            <path d="M520 309 L561 309" stroke="#dadde2" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+            <path d="M803 321 L894 334 L914 357 L832 359 Z" fill="#d3d8de" opacity=".95"/>
+            <path d="M810 330 L896 342" stroke="#f9ffff" stroke-width="4" opacity=".9"/>
+            <path d="M106 340 L160 325 L151 351 L97 360" fill="url(#orangeBand)"/>
+            <path d="M162 325 L189 320 L166 347" fill="#f3a181" opacity=".6"/>
+            <path d="M128 423 L883 423" stroke="#000" stroke-width="8" opacity=".8"/>
+            <g transform="translate(280 415)">
+              <circle r="89" fill="#101216" stroke="#050608" stroke-width="16"/>
+              <circle r="70" fill="#25282e" stroke="#555a61" stroke-width="3"/>
+              <circle r="53" fill="#161a22" stroke="#979ca5" stroke-width="5"/>
+              <g stroke="#b3b9c3" stroke-width="12" stroke-linecap="round">
+                <path d="M0 -48 L0 -22 M42 -24 L19 -11 M42 24 L19 11 M0 48 L0 22 M-42 24 L-19 11 M-42 -24 L-19 -11"/>
+              </g>
+              <circle r="18" fill="#575d67" stroke="#b5bac4" stroke-width="3"/>
+              <circle r="7" fill="#ff704a"/>
+            </g>
+            <g transform="translate(753 415)">
+              <circle r="89" fill="#101216" stroke="#050608" stroke-width="16"/>
+              <circle r="70" fill="#25282e" stroke="#555a61" stroke-width="3"/>
+              <circle r="53" fill="#161a22" stroke="#979ca5" stroke-width="5"/>
+              <g stroke="#b3b9c3" stroke-width="12" stroke-linecap="round">
+                <path d="M0 -48 L0 -22 M42 -24 L19 -11 M42 24 L19 11 M0 48 L0 22 M-42 24 L-19 11 M-42 -24 L-19 -11"/>
+              </g>
+              <circle r="18" fill="#575d67" stroke="#b5bac4" stroke-width="3"/>
+              <circle r="7" fill="#ff704a"/>
+            </g>
+            <path d="M163 309 L255 286 L327 218 Q351 192 395 185 L640 180" fill="none" stroke="#f1f2f5" stroke-opacity=".36" stroke-width="3"/>
+            <path d="M787 286 L872 310" stroke="#ff926c" opacity=".6" stroke-width="5"/>
+            <path d="M101 367 L121 366" stroke="#c4c8cf" stroke-width="4"/>
+            <path d="M897 383 L920 383" stroke="#a7adb5" stroke-width="5"/>
+          </svg>
+          <span class="visual-number">BUILT FOR THE ROAD — 47/01</span>
+        </div>
+      </section>
+  </div>
+  <div class="service-strip" aria-label="Główne usługi"><div class="container strip-inner"><span>DIAGNOSTYKA</span><span>MECHANIKA</span><span>KLIMATYZACJA</span><span>OPONY I KOŁA</span></div></div>
+  <section class="section container" id="uslugi">
+    <div class="section-top">
+      <div><span class="section-kicker">01 / NASZA OFERTA</span><h2>Wszystko, czego<br><span>potrzebuje Twoje auto.</span></h2></div>
+      <p>Od komputerowej diagnostyki po wymianę opon. Wybierz usługę, a pomożemy Ci zaplanować dalsze kroki.</p>
+    </div>
+    <div class="services">
+      <article class="service">
+        <div class="service-head"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h4m-4 4h6m4-4h1m-1 4h1M8 6V3m8 3V3"/></svg></div><span class="service-id">01 /</span></div>
+        <h3>Diagnostyka komputerowa</h3><p>Odczyt błędów, analiza usterek i pomoc w znalezieniu ich przyczyny.</p>
+      </article>
+      <article class="service">
+        <div class="service-head"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m4 20 10-10M8 4l12 12M15 3l6 6-4 4-6-6M2 17l5 5"/></svg></div><span class="service-id">02 /</span></div>
+        <h3>Naprawy mechaniczne</h3><p>Serwis podzespołów, usuwanie usterek i bieżąca obsługa samochodu.</p>
+      </article>
+      <article class="service">
+        <div class="service-head"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c3 5 6 8 6 12a6 6 0 0 1-12 0c0-4 3-7 6-12Z"/><path d="M9 15c0 2 1 3 3 3"/></svg></div><span class="service-id">03 /</span></div>
+        <h3>Wymiana oleju i filtrów</h3><p>Regularny przegląd elementów eksploatacyjnych i wymiana płynów.</p>
+      </article>
+      <article class="service">
+        <div class="service-head"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M4 6l16 12M20 6 4 18M2 12h20"/><circle cx="12" cy="12" r="4"/></svg></div><span class="service-id">04 /</span></div>
+        <h3>Serwis klimatyzacji</h3><p>Kontrola układu klimatyzacji, odgrzybianie i obsługa sezonowa.</p>
+      </article>
+      <article class="service">
+        <div class="service-head"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v5m0 8v5M3 12h5m8 0h5"/></svg></div><span class="service-id">05 /</span></div>
+        <h3>Hamulce i zawieszenie</h3><p>Weryfikacja zużycia, wymiana elementów i poprawa komfortu jazdy.</p>
+      </article>
+      <article class="service">
+        <div class="service-head"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 7v10m-5-5h10m-8-3 6 6m0-6-6 6"/></svg></div><span class="service-id">06 /</span></div>
+        <h3>Opony i koła</h3><p>Sezonowa wymiana ogumienia, kontrola kół i podstawowy serwis.</p>
+      </article>
+    </div>
+  </section>
+  <section class="experience" id="o-nas">
+    <div class="container experience-grid">
+      <div class="experience-graphic" aria-label="Grafika felgi samochodowej">
+        <span class="graphic-corner">GARAGE / 47</span>
+        <svg class="tire-art" viewBox="0 0 400 400" role="img" aria-label="Schemat koła z felgą">
+          <defs><radialGradient id="tireG"><stop offset="0" stop-color="#454950"/><stop offset=".48" stop-color="#292c31"/><stop offset=".8" stop-color="#14171d"/><stop offset="1" stop-color="#292d33"/></radialGradient></defs>
+          <circle cx="200" cy="200" r="176" fill="#08090c" stroke="#484c55" stroke-width="9"/>
+          <circle cx="200" cy="200" r="143" fill="url(#tireG)" stroke="#737984" stroke-width="8"/>
+          <circle cx="200" cy="200" r="120" fill="#171b21" stroke="#b4b7c0" stroke-width="7"/>
+          <circle cx="200" cy="200" r="105" fill="#2c3139" stroke="#535862" stroke-width="3"/>
+          <g fill="#777e8a" stroke="#c2c5cc" stroke-width="4">
+            <path d="M188 96h24l9 79-21 17-21-17Z"/>
+            <path d="M188 96h24l9 79-21 17-21-17Z" transform="rotate(60 200 200)"/>
+            <path d="M188 96h24l9 79-21 17-21-17Z" transform="rotate(120 200 200)"/>
+            <path d="M188 96h24l9 79-21 17-21-17Z" transform="rotate(180 200 200)"/>
+            <path d="M188 96h24l9 79-21 17-21-17Z" transform="rotate(240 200 200)"/>
+            <path d="M188 96h24l9 79-21 17-21-17Z" transform="rotate(300 200 200)"/>
+          </g>
+          <circle cx="200" cy="200" r="42" fill="#343942" stroke="#a9acb5" stroke-width="8"/>
+          <circle cx="200" cy="200" r="17" fill="#ff643e"/>
+          <circle cx="200" cy="200" r="168" fill="none" stroke="#333740" stroke-width="13" stroke-dasharray="9 12"/>
+        </svg>
+        <span class="graphic-bottom">PRECISION / MOTION / CARE</span>
+      </div>
+      <div class="experience-copy">
+        <span class="eyebrow">WIĘCEJ NIŻ TYLKO NAPRAWA</span>
+        <h2>Sprawny samochód.<br>Spokojna głowa.</h2>
+        <p>Stawiamy na jasną komunikację: najpierw diagnoza, później omówienie zakresu prac. Chcemy, byś wiedział, co dzieje się z Twoim samochodem na każdym etapie wizyty.</p>
+        <ul class="experience-points">
+          <li>Przejrzysta lista usług bez technicznego żargonu</li>
+          <li>Kontakt bez zbędnych formalności</li>
+          <li>Czytelna informacja o zakresie naprawy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section container" id="jak-dzialamy">
+    <div class="section-top">
+      <div><span class="section-kicker">02 / JAK TO DZIAŁA</span><h2>Trzy kroki.<br><span>I wszystko jasne.</span></h2></div>
+      <p>Od pierwszego zgłoszenia do odbioru auta — bez niejasności.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-number">01</span><h3>Opisz problem</h3><p>Wybierz usługę i przekaż podstawowe informacje o samochodzie oraz usterce.</p></div>
+      <div class="step"><span class="step-number">02</span><h3>Ustal termin</h3><p>Po kontakcie z warsztatem uzgodnij dogodny termin i zakres prac.</p></div>
+      <div class="step"><span class="step-number">03</span><h3>Odbierz samochód</h3><p>Po wykonaniu usługi odbierz auto i uzyskaj informacje o przeprowadzonych pracach.</p></div>
+    </div>
+  </section>
+  <section class="visit-section" id="lokalizacja">
+    <div class="container visit-grid">
+      <div class="visit-copy">
+        <span class="section-kicker">03 / GDZIE JESTEŚMY</span>
+        <h2>Blisko Ciebie.<br><span>Łatwo dojechać.</span></h2>
+        <p>STACJA 47 to fikcyjny warsztat z Wałcza. Pokazujemy, jak na prawdziwej stronie umieścić lokalizację, godziny i kontakt.</p>
+        <div class="visit-details"><div><b>Obszar</b><span>Wałcz · lokalizacja demonstracyjna</span></div><div><b>Godziny pokazowe</b><span>Pon–pt: 8:00–17:00 · Sob: 9:00–13:00</span></div><div><b>Telefon</b><span>Wersja demonstracyjna — brak aktywnego numeru</span></div></div>
+        <p class="visit-tip">W prawdziwej realizacji podłączamy aktualną mapę, zweryfikowany numer z przyciskiem „Zadzwoń” oraz dane firmy. Nie kierujemy klientów pod wymyślony adres.</p>
+      </div>
+      <div class="demo-map" role="img" aria-label="Poglądowa grafika mapy fikcyjnego warsztatu, bez rzeczywistego adresu">
+        <span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-road road-three"></span>
+        <span class="map-block block-one"></span><span class="map-block block-two"></span><span class="map-block block-three"></span>
+        <span class="map-pin">47°</span><span class="map-caption">WAŁCZ / MAPA POGLĄDOWA · BEZ RZECZYWISTEGO ADRESU</span>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section" id="kontakt">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <span class="section-kicker">04 / KONTAKT</span>
+        <h2>Potrzebujesz<br><span>pomocy z autem?</span></h2>
+        <p>Napisz, z jakim problemem przyjeżdżasz. Ten formularz pokazuje przebieg zgłoszenia — nie jest połączony z warsztatem.</p>
+        <div class="contact-note"><b>i</b><span>To demonstracja interfejsu. Formularz nie zapisuje danych ani nie wysyła wiadomości — nie wpisuj tu danych osobowych.</span></div>
+      </div>
+      <form class="contact-form" id="demo-form">
+        <div class="form-heading"><h3>Zapytaj o wizytę</h3><span>FORMULARZ DEMO</span></div>
+        <div class="form-grid">
+          <div class="form-field"><label for="demo-name">Imię / pseudonim</label><input id="demo-name" name="name" type="text" placeholder="np. Jan" autocomplete="off" required maxlength="60"></div>
+          <div class="form-field"><label for="demo-car">Marka i model auta</label><input id="demo-car" name="car" type="text" placeholder="np. Opel Astra" autocomplete="off" required maxlength="80"></div>
+          <div class="form-field full"><label for="demo-service">Jaka usługa Cię interesuje?</label><select id="demo-service" name="service" required><option value="">Wybierz usługę</option><option>Diagnostyka komputerowa</option><option>Naprawy mechaniczne</option><option>Wymiana oleju i filtrów</option><option>Serwis klimatyzacji</option><option>Hamulce i zawieszenie</option><option>Opony i koła</option><option>Inne</option></select></div>
+          <div class="form-field full"><label for="demo-message">Krótki opis problemu</label><textarea id="demo-message" name="message" placeholder="Opisz, co dzieje się z samochodem…" maxlength="500"></textarea></div>
+        </div>
+        <div class="form-bottom"><small>Podgląd działania formularza — bez wysyłania danych.</small><button type="submit" class="button button-primary">Wyślij zgłoszenie <span aria-hidden="true">↗</span></button></div>
+        <div class="form-result" id="form-result" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#start"><span class="brand-mark">47<span>°</span></span><span class="brand-name">STACJA<br>47 <small>AUTO SERVICE</small></span></a><span class="footer-note">Strona koncepcyjna fikcyjnego warsztatu, wykonana jako projekt demonstracyjny. © <span id="year"></span> · Radosław Cis</span></div></footer>
+  <script>
+    const menuButton=document.querySelector('.menu-toggle');
+    const nav=document.querySelector('#site-navigation');
+    menuButton.addEventListener('click',()=>{
+      const open=nav.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded',String(open));
+      menuButton.setAttribute('aria-label',open?'Zamknij menu':'Otwórz menu');
+      menuButton.textContent=open?'×':'☰';
+    });
+    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+      nav.classList.remove('is-open');
+      menuButton.setAttribute('aria-expanded','false');
+      menuButton.setAttribute('aria-label','Otwórz menu');
+      menuButton.textContent='☰';
+    }));
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('is-open')){nav.classList.remove('is-open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Otwórz menu');menuButton.textContent='☰';menuButton.focus()}});
+    document.querySelector('#year').textContent=new Date().getFullYear();
+    const demoForm=document.querySelector('#demo-form');
+    demoForm.addEventListener('submit',event=>{
+      event.preventDefault();
+      if(!demoForm.reportValidity())return;
+      document.querySelector('#form-result').textContent='To podgląd formularza — zgłoszenie nie zostało wysłane. Tak mógłby wyglądać komunikat potwierdzenia na prawdziwej stronie.';
+    });
+  </script>
+</body>
+</html>
