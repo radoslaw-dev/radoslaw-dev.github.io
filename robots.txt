@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://radoslaw-dev.github.io/sitemap.xml
+
+# DOPASUJ DOMENĘ PRZED PUBLIKACJĄ
+Sitemap: https://DOMENA-DO-UZUPELNIENIA.pl/sitemap.xml
