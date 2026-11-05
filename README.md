@@ -1,43 +1,111 @@
-# Radosław Cis — portfolio dla firm (wersja rozbudowana)
+# Radosław Cis — Web Developer
 
-Nowa wersja portfolio oparta na dostarczonych plikach. Obejmuje strony WWW, redesign i **podstawy SEO**. Wszystkie marki Morrow, Stacja 47 i Studio Ami są fikcyjne i służą wyłącznie demonstracji.
+**Nowoczesne strony internetowe | Redesign | Responsive Web Design | Podstawy SEO**
 
-## Zawartość
+Repozytorium zawiera moje portfolio prezentujące usługi projektowania i tworzenia stron internetowych dla firm oraz autorskie projekty demonstracyjne.
 
-- `index.html`, `styles.css`, `script.js` — główne portfolio, FAQ i formularz otwierający **program pocztowy** (nie wysyła bezpośrednio wiadomości).
-- `demo-kawiarnia.html` + `.css` — koncepcja strony kawiarni z godzinami i przykładową lokalizacją.
-- `demo-mechanik.html` + `.css` — koncepcja serwisu motoryzacyjnego z godzinami i poglądową mapą. Formularz wyłącznie pokazowy.
-- `demo-redesign.html` — interaktywne porównanie przed i po dla fikcyjnego Studio Ami.
-- `assets/favicon.svg` — wektorowy znak RC.; `assets/og-image.png` — grafika pod podgląd linku.
-- `robots.txt`, `sitemap.xml` — pliki techniczne do indeksowania głównej strony.
+🌐 **[Zobacz portfolio](https://radoslaw-dev.github.io/)**
 
-## Koniecznie wykonaj przed publikacją
+## O projekcie
 
-**1. Ustaw kanoniczny URL.** W plikach `index.html`, `robots.txt` i `sitemap.xml` zamień **wszystkie wystąpienia** `https://DOMENA-DO-UZUPELNIENIA.pl/` na pełny adres strony, np. `https://radoslaw-dev.github.io/strony-dla-firm/` tylko jeśli naprawdę tam ją opublikujesz. Adres musi zawierać końcowy ukośnik i ścieżkę repozytorium (jeśli to GitHub Pages projektu). W `index.html` dotyczy to canonical, `og:url`, `og:image`, `twitter:image`. Zły adres kanoniczny lub sitemap będzie szkodził SEO.
+Portfolio zostało zaprojektowane i wykonane przeze mnie od podstaw, z wykorzystaniem HTML, CSS i JavaScript.
 
-**2. Ustal faktyczny obszar działalności.** W opisach wpisano Wałcz/okolice oraz współpracę online jako propozycję. Zmień te słowa, jeżeli nie pasują do Twojej oferty.
+Strona prezentuje zakres oferowanych usług, przykładowe realizacje, proces współpracy oraz moje kwalifikacje.
 
-**3. Zweryfikuj swój kontakt.** W kodzie strony jest `cis.radoslaw@protonmail.com`. Jeśli używasz innego adresu, zmień wszystkie wystąpienia w `index.html` i `script.js`.
+Głównym celem projektu jest stworzenie nowoczesnej, intuicyjnej i responsywnej wizytówki internetowej, która ułatwia potencjalnym klientom zapoznanie się z ofertą i nawiązanie kontaktu.
 
-**4. Zostaw tylko usługi, które rzeczywiście umiesz dostarczyć.** Podstawy SEO ≠ gwarancja pierwszego miejsca w Google. Profil Firmy w Google wymaga prawdziwych danych i osobnej konfiguracji u właściciela firmy.
+## Technologie
 
-**5. Nie udostępniaj fikcyjnych danych jako rzeczywistych.** Wszystkie trzy dema mają `noindex`. Podane godziny i lokalizacje są oznaczone jako pokazowe, nie ma wymyślonych telefonów ani opinii klientów.
+- **HTML5** — semantyczna struktura strony
+- **CSS3** — responsywny layout, animacje i stylizacja
+- **JavaScript** — interaktywne elementy i obsługa formularza
+- **SEO** — metadane, dane strukturalne, sitemap.xml i robots.txt
+- **GitHub Pages** — hosting i publikacja strony
 
-## Publikacja
+Projekt nie wykorzystuje rozbudowanych frameworków frontendowych.
 
-1. Rozpakuj ZIP i otwórz `index.html` — wszystko działa lokalnie, bez zewnętrznych fontów czy bibliotek.
-2. Umieść **całą zawartość** folderu w nowym repozytorium GitHub.
-3. GitHub → Settings → Pages → Deploy from a branch → `main` → `/(root)`.
-4. Ustal URL publikacji i zastosuj punkt 1 listy wyżej. Następnie opublikuj poprawione pliki.
-5. Po wdrożeniu sprawdź `robots.txt` i `sitemap.xml` pod publicznym adresem oraz metadane podglądu linku.
-6. Dopiero na **opublikowanym adresie** sprawdź Lighthouse i PageSpeed Insights oraz zapisz rzeczywiste wyniki. Nie zakładaj z góry określonych liczb.
+## Funkcjonalności
 
-## Uwaga o obrazach i fontach
+- Responsywny interfejs dostosowany do komputerów, tabletów i telefonów
+- Nowoczesny wygląd z ciemną kolorystyką
+- Interaktywna nawigacja mobilna
+- Animacje pojawiania się elementów
+- Prezentacja usług i projektów
+- Sekcja FAQ
+- Formularz przygotowujący wiadomość e-mail
+- Podstrona usługowa pod lokalne SEO dla Wałcza i Piły
+- Podstawowa optymalizacja dostępności i SEO
 
-Wersja używa fontów systemowych, nie łączy się z serwerami Google Fonts. To eliminuje zbędne połączenie zewnętrzne, ale nie stanowi kompletnego audytu zgodności z RODO. W przykładach wykorzystano ilustracje CSS i SVG. Aby zaprezentować prawdziwe zdjęcia w realizacji dla firmy, dodaj obrazy WebP/AVIF z prawami do wykorzystania, wymiarami `width`/`height`, opisowym `alt` oraz `loading="lazy"` dla zdjęć poniżej pierwszego ekranu.
+## Projekty demonstracyjne
 
-## Formularze
+**Morrow — strona kawiarni**
 
-Główny formularz po wypełnieniu otwiera domyślną aplikację pocztową klienta, w której trzeba jeszcze zatwierdzić wysyłkę. Jeżeli chcesz prawdziwy formularz działający w przeglądarce, musisz osobno skonfigurować backend lub usługę formularzy (np. Formspree) i zadbać o wymagane informacje o przetwarzaniu danych.
+Autorski projekt przykładowej strony internetowej kawiarni, skupiony na estetyce, typografii i prezentacji oferty.
 
-Projekt nie zawiera żadnych rzekomych ocen 95+ Lighthouse, fałszywych klientów, ich opinii, cen, terminów ani fikcyjnych danych kontaktowych.
+**Stacja 47 — strona warsztatu samochodowego**
+
+Responsywna witryna demonstracyjna z prezentacją usług, nowoczesnym layoutem i interaktywnymi elementami.
+
+**Studio Ami — koncepcja redesignu**
+
+Interaktywne porównanie starej i nowej wersji fikcyjnej witryny, pokazujące możliwości poprawy wyglądu i użyteczności strony.
+
+*Wymienione projekty są demonstracjami umiejętności, a nie realizacjami komercyjnymi.*
+
+## Kwalifikacje
+
+Posiadam certyfikat kwalifikacji rynkowej **„Tworzenie witryn internetowych”**, wydany przez Fundację VCC.
+
+- Poziom kwalifikacji: PRK 4
+- Kod kwalifikacji w ZRK: 12642
+
+Jestem również uczniem technikum informatycznego i stale rozwijam umiejętności w zakresie frontendu, projektowania interfejsów i technologii internetowych.
+
+## Struktura projektu
+
+```text
+/
+├── index.html
+├── styles.css
+├── script.js
+├── strony-internetowe-walcz-pila.html
+├── demo-kawiarnia.html
+├── demo-kawiarnia.css
+├── demo-mechanik.html
+├── demo-mechanik.css
+├── demo-redesign.html
+├── favicon.svg
+├── og-image.png
+├── robots.txt
+├── sitemap.xml
+├── dev/
+│   ├── index.html
+│   └── style.css
+└── README.md
+```
+
+## Uruchomienie lokalne
+
+1. Sklonuj repozytorium:
+
+   ```bash
+   git clone https://github.com/radoslaw-dev/radoslaw-dev.github.io.git
+   ```
+
+2. Otwórz katalog projektu.
+3. Uruchom `index.html` w przeglądarce lub skorzystaj z lokalnego serwera, np. rozszerzenia Live Server w VS Code.
+
+Nie jest wymagany proces kompilacji ani instalacja zależności.
+
+## Kontakt
+
+Jesteś zainteresowany stworzeniem nowej strony internetowej lub modernizacją istniejącej?
+
+- **Portfolio:** https://radoslaw-dev.github.io/
+- **GitHub:** https://github.com/radoslaw-dev
+- **E-mail:** cis.radoslaw@protonmail.com
+- **Lokalizacja:** Wałcz, Polska — współpraca zdalna na terenie całego kraju
+
+---
+
+© 2026 Radosław Cis. Projekt i wykonanie: Radosław Cis.
